@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "JIRA Absolute Dates",
+  "description": "Shows JIRA absolute dates.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "logo16.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  },
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_title": "Shows JIRA absolute dates."
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "background" : {
+    "scripts" : ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.atlassian.net/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

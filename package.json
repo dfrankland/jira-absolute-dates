@@ -1,0 +1,53 @@
+{
+  "name": "jira-absolute-dates",
+  "version": "1.0.0",
+  "description": "Shows JIRA absolute dates.",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node ./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfrankland/jira-dates.git"
+  },
+  "keywords": [
+    "jira",
+    "dates"
+  ],
+  "author": "Dylan Frankland, @dfrankland <dylan@frankland.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfrankland/jira-dates/issues"
+  },
+  "homepage": "https://github.com/dfrankland/jira-dates#readme",
+  "dependencies": {
+    "moment": "^2.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-react-constant-elements": "^6.9.1",
+    "babel-plugin-transform-react-inline-elements": "^6.8.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.2.10",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-modern-node": "^3.2.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "webpack": "^1.13.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "modern-node",
+        {
+          "version": "6.0"
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}
